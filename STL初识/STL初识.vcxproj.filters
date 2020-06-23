@@ -28,6 +28,12 @@
     <Filter Include="源文件\set">
       <UniqueIdentifier>{e6f83498-7d43-442a-9c1a-f4b3d8606161}</UniqueIdentifier>
     </Filter>
+    <Filter Include="源文件\函数对象">
+      <UniqueIdentifier>{26def65e-b8d1-4795-b13b-f87e81e053ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\常用算法">
+      <UniqueIdentifier>{ace9e0f8-207d-4619-8475-8ab67958732a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="STL案列-评委打分.cpp">
@@ -130,22 +136,31 @@
       <Filter>源文件\set</Filter>
     </ClCompile>
     <ClCompile Include="函数对象-01基本使用.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\函数对象</Filter>
     </ClCompile>
     <ClCompile Include="函数对象-02一元谓词.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\函数对象</Filter>
     </ClCompile>
     <ClCompile Include="函数对象-03二元谓词.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\函数对象</Filter>
     </ClCompile>
     <ClCompile Include="函数对象-04内建函数对象-算术仿函数.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\函数对象</Filter>
     </ClCompile>
     <ClCompile Include="函数对象-05内建函数对象-关系仿函数.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\函数对象</Filter>
     </ClCompile>
     <ClCompile Include="函数对象-06内建函数对象-逻辑仿函数.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\函数对象</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-01遍历foreach.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-02遍历算法transform.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-03查找find.cpp">
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
