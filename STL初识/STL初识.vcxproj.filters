@@ -129,5 +129,23 @@
     <ClCompile Include="set容器-07排序自定义类型.cpp">
       <Filter>源文件\set</Filter>
     </ClCompile>
+    <ClCompile Include="函数对象-01基本使用.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="函数对象-02一元谓词.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="函数对象-03二元谓词.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="函数对象-04内建函数对象-算术仿函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="函数对象-05内建函数对象-关系仿函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="函数对象-06内建函数对象-逻辑仿函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
