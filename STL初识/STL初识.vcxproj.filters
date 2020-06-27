@@ -162,5 +162,20 @@
     <ClCompile Include="常用算法-03查找find.cpp">
       <Filter>源文件\常用算法</Filter>
     </ClCompile>
+    <ClCompile Include="常用算法-04查找find_if.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-05查找相邻元素adjacent_find.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-06查找指定元素binary_search.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-07统计元素个数count.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-08按条件统计count_if.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
