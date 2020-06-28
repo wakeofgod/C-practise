@@ -178,36 +178,33 @@
       <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-09sort排序.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-10洗牌排序random_shuffle.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-11合并merge.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-12反转reverse.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-13拷贝copy.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-14替换replace.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-15替换replace_if.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-16交换swap.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-17生成算法accumulate.cpp">
-      <Filter>源文件</Filter>
+      <Filter>源文件\常用算法</Filter>
     </ClCompile>
     <ClCompile Include="常用算法-18生成算法fill.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="常用算法-09排序sort.cpp">
       <Filter>源文件\常用算法</Filter>
     </ClCompile>
   </ItemGroup>
