@@ -207,5 +207,14 @@
     <ClCompile Include="常用算法-18生成算法fill.cpp">
       <Filter>源文件\常用算法</Filter>
     </ClCompile>
+    <ClCompile Include="常用算法-19集合算法set_intersection.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-20集合算法并集set_union.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
+    <ClCompile Include="常用算法-21集合算法差集set_difference.cpp">
+      <Filter>源文件\常用算法</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
