@@ -5,7 +5,10 @@
 using namespace std;
 #include <vector>
 #include <map>
+#include <deque>
+#include <numeric>
 #include "Speaker.h"
+#include <fstream>
 
 class SpeechManager
 {
@@ -32,8 +35,24 @@ public:
 	void showMenu();
 	//开始比赛 -比赛流程的控制
 	void startSpeech();
+	//比赛
+	void speechContest();
+	//显示晋级人员比赛分数
+	void showScore();
 	//抽签
 	void speechDraw();
+	//保存分数
+	void saveRecord();
+	//读取记录
+	void loadRecord();
+	//文件为空的标识
+	bool fileIsEmpty;
+	//往届记录
+	map<int, vector<string>>m_Record;
+	//显示往届得分
+	void showRecord();
+	//清空数据
+	void clearRecord();
 	// 退出
 	void exitSystem();
 	//析构函数
