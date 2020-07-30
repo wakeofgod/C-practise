@@ -2,6 +2,11 @@
 #include <iostream>
 #include <string>
 #include "Identity.h"
+#include "globalFile.h"
+#include "student.h"
+#include "teacher.h"
+#include <fstream>
+#include <vector>
 
 class Manager :public Identity
 {
@@ -20,4 +25,14 @@ public:
 	void showComputer();
 	//清空预约记录
 	void cleanFile();
+
+	//初始化容器
+	void initVector();
+	//学生容器
+	vector<Student>vStu;
+	//老师容器
+	vector<Teacher>vTea;
+	//检查重复
+	bool checkRepeat(int id,int type);
+
 };

@@ -8,6 +8,43 @@
 #include "manager.h"
 using namespace std;
 
+//管理员菜单
+void managerMenu(Identity * &manager)
+{
+	while (true)
+	{
+		manager->openMenu();
+		Manager *man = (Manager*)manager;
+		int select = 0;
+		cin >> select;
+		switch (select)
+		{
+		case 1:
+			cout << "添加账号" << endl;
+			man->addPerson();
+			break;
+		case 2:
+			cout << "查看账号" << endl;
+			man->showPerson();
+			break;
+		case 3:
+			cout << "查看机房" << endl;
+			man->showComputer();
+			break;
+		case 4:
+			cout << "清空预约" << endl;
+			man->cleanFile();
+			break;
+		default:
+			delete manager;
+			cout << "注销成功" << endl;
+			system("pause");
+			system("cls");
+			return;
+			break;
+		}
+	}
+}
 //登录功能 参数1 操作文件名 参数2 操作身份类型
 void LoginIn(string fileName, int type)
 {
@@ -98,7 +135,7 @@ void LoginIn(string fileName, int type)
 				system("cls");
 				person = new Manager(name, pwd);
 				//进入管理员身份的子菜单
-
+				managerMenu(person);
 				return;
 			}
 		}
