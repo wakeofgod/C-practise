@@ -15,3 +15,4 @@
 *.pdb
 /基于STL的演讲比赛流程管理系统/x64/Debug/基于STL的演讲比赛流程管理系统.Build.CppClean.log
 *.log
+*.txt
