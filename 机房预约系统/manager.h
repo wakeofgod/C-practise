@@ -7,6 +7,7 @@
 #include "teacher.h"
 #include <fstream>
 #include <vector>
+#include "computerRoom.h"
 
 class Manager :public Identity
 {
@@ -34,5 +35,9 @@ public:
 	vector<Teacher>vTea;
 	//检查重复
 	bool checkRepeat(int id,int type);
+	//机房容器
+	vector<ComputerRoom>vCom;
+	//初始化机房
+	void initComputer();
 
 };

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "manager.h"
-
+#include <algorithm>
 //默认构造
 Manager::Manager()
 {
@@ -15,6 +15,8 @@ Manager::Manager(string name, string pwd)
 
 	//初始化容器
 	this->initVector();
+	//初始化机房
+	this->initComputer();
 }
 //选择菜单
 void Manager::openMenu()
@@ -160,18 +162,48 @@ bool Manager::checkRepeat(int id,int type)
 	}
 	return false;
 }
+//初始化机房
+void Manager::initComputer()
+{
+	vCom.clear();
+	ifstream ifs;
+	ifs.open(COMPUTER_FILE, ios::in);
+	if (!ifs.is_open())
+	{
+		cout << "机房文件读取失败" << endl;
+		return;
+	}
+	ComputerRoom c;
+	while (ifs>>c.mComId &&ifs>>c.mMaxNum)
+	{
+		vCom.push_back(c);
+	}
+	cout << "当前机房数量为:" << vCom.size() << endl;
+	ifs.close();
+}
 //查看账号
 void Manager::showPerson()
 {
 
 }
+void printComputer01(const ComputerRoom &com)
+{
+	cout <<"机房编号:"<< com.mComId <<" \t机房最大容量: "<< com.mMaxNum << endl;
+}
 //查看机房信息
 void Manager::showComputer()
 {
-
+	cout << "机房信息如下:" << endl;
+	for_each(vCom.begin(), vCom.end(), printComputer01);
+	system("pause");
+	system("cls");
 }
 //清空预约记录
 void Manager::cleanFile()
 {
-
+	ofstream ofs(ORDER_FILE, ios::trunc);
+	ofs.close();
+	cout << "清空成功！" << endl;
+	system("pause");
+	system("cls");
 }
