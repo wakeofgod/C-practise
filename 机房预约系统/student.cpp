@@ -106,7 +106,7 @@ void Student::applyOrder()
 	ofs.open(ORDER_FILE, ios::app);
 	ofs << "date:" << date << " ";
 	ofs << "interval:" << interval << " ";
-	ofs << "StuId:" << this->mId << " ";
+	ofs << "stuId:" << this->mId << " ";
 	ofs << "stuName:" << this->mName << " ";
 	ofs << "roomId:" << room << " ";
 	ofs << "status:" << 1 << endl;

@@ -16,10 +16,14 @@ void subStrOrder(map<string, string>* m, string  &keyValue)
 	}
 }
 //打印小map
-void printSmallMap(pair<string,string> &p)
+//void printSmallMap(pair<string,string> &p)
+//{
+//	//cout << str1 << " " << str2 << endl;
+//	cout << p.first << " " << p.second << endl;
+//}
+void printSmallMap(map<string, string>::reference i)
 {
-	//cout << str1 << " " << str2 << endl;
-	cout << p.first << " " << p.second << endl;
+	cout << i.first << " " << i.second << endl;
 }
 //构造函数
 OrderFile::OrderFile()
