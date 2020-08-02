@@ -16,6 +16,7 @@ void subStrOrder(map<string, string>* m, string  &keyValue)
 	}
 }
 //打印小map
+//第一个不可用，报错无法将参数从std::pair<const _Kty,_Ty>转换为
 //void printSmallMap(pair<string,string> &p)
 //{
 //	//cout << str1 << " " << str2 << endl;
@@ -73,20 +74,34 @@ OrderFile::OrderFile()
 	}
 	ifs.close();
 	//测试代码
-	for (map<int,map<string,string>>::iterator it = mOrderData.begin(); it!=mOrderData.end(); it++)
-	{
-		//调用封装打印小map失败
-		//for_each(it->second.begin(), it->second.end(), printSmallMap);
-		cout << "第" << it->first << "条记录" << endl;
-		for (map<string,string>::iterator it2 = it->second.begin(); it2 !=it->second.end(); it2++)
-		{
-			cout <<"key:"<< it2->first << " value: " << it2->second << endl;
-		}
-		cout << endl;
-	}
+	//for (map<int,map<string,string>>::iterator it = mOrderData.begin(); it!=mOrderData.end(); it++)
+	//{
+	//	//调用封装打印小map失败
+	//	//for_each(it->second.begin(), it->second.end(), printSmallMap);
+	//	cout << "第" << it->first << "条记录" << endl;
+	//	for (map<string,string>::iterator it2 = it->second.begin(); it2 !=it->second.end(); it2++)
+	//	{
+	//		cout <<"key:"<< it2->first << " value: " << it2->second << endl;
+	//	}
+	//	cout << endl;
+	//}
 }
 //更新预约记录
 void OrderFile::updateOrder()
 {
-
+	if (this->mSize == 0)
+	{
+		return;
+	}
+	ofstream ofs(ORDER_FILE, ios::out | ios::trunc);
+	for (int i = 0; i < this->mSize; i++)
+	{
+		ofs << "date:" <<this->mOrderData[i]["date"] << " ";
+		ofs << "interval:" << this->mOrderData[i]["interval"] << " ";
+		ofs << "stuId:" << this->mOrderData[i]["stuId"] << " ";
+		ofs << "stuName:" << this->mOrderData[i]["stuName"] << " ";
+		ofs << "roomId:" << this->mOrderData[i]["roomId"] << " ";
+		ofs << "status:" << this->mOrderData[i]["status"] << endl;
+	}
+	ofs.close();
 }
