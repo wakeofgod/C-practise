@@ -183,7 +183,7 @@ void Student::showAllOrder()
 		}
 		else if (of.mOrderData[i]["status"] == "2")
 		{
-			status += "已预约";
+			status += "预约成功";
 		}
 		else if (of.mOrderData[i]["status"] == "-1")
 		{
