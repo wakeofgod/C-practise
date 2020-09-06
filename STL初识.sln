@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "职工管理系统", "职�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "机房预约系统", "机房预约系统\机房预约系统.vcxproj", "{D875EC17-1441-440F-A9F2-D6C68D767A5E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PK游戏案列", "PK游戏案列\PK游戏案列.vcxproj", "{F873494D-1381-47F4-B034-A0B9D07977A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{D875EC17-1441-440F-A9F2-D6C68D767A5E}.Release|x64.Build.0 = Release|x64
 		{D875EC17-1441-440F-A9F2-D6C68D767A5E}.Release|x86.ActiveCfg = Release|Win32
 		{D875EC17-1441-440F-A9F2-D6C68D767A5E}.Release|x86.Build.0 = Release|Win32
+		{F873494D-1381-47F4-B034-A0B9D07977A8}.Debug|x64.ActiveCfg = Debug|x64
+		{F873494D-1381-47F4-B034-A0B9D07977A8}.Debug|x64.Build.0 = Debug|x64
+		{F873494D-1381-47F4-B034-A0B9D07977A8}.Debug|x86.ActiveCfg = Debug|Win32
+		{F873494D-1381-47F4-B034-A0B9D07977A8}.Debug|x86.Build.0 = Debug|Win32
+		{F873494D-1381-47F4-B034-A0B9D07977A8}.Release|x64.ActiveCfg = Release|x64
+		{F873494D-1381-47F4-B034-A0B9D07977A8}.Release|x64.Build.0 = Release|x64
+		{F873494D-1381-47F4-B034-A0B9D07977A8}.Release|x86.ActiveCfg = Release|Win32
+		{F873494D-1381-47F4-B034-A0B9D07977A8}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
